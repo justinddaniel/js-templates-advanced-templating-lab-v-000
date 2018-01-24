@@ -16,6 +16,7 @@
       <input type="submit">
     </form>
     <script id="recipe-template" type="text/x-handlebars-template">
+      {{> recipeDetailsPartial}}
       <p>{{name}}</p>
       <a href="#" onclick="loadRecipe();">Edit Recipe</a>
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
