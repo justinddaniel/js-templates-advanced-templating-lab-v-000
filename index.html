@@ -10,7 +10,11 @@
     <main id="main">
     </main>
     <form id="recipe-form-template" onsubmit="createRecipe();return false">
-      
+      Name: <input type="text" id="recipeName"><br>
+      Description: <input type="text" id="recipeDescription"><br>
+      Ingredients: <input type="text" id="recipeIngredients"><br>
+      <input type="submit">
+    </form>
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="index.js"></script>
     <!-- Open this file and call `mocha.run()` in console to run tests -->
