@@ -1,3 +1,12 @@
+
+
+
+
+
+
+
+
+//page and handlebars initializers
 function init() {
   handlebarsSetup()
   initForm()
