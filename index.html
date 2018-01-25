@@ -7,17 +7,23 @@
     <link rel="stylesheet" href="node_modules/mocha/mocha.css" />
   </head>
   <body>
-    <main id="main">
-    </main>
+    <main id="main"></main>
+    <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
+    <script src="index.js"></script>
+
+    <script id="recipe-template" type="text/x-handlebars-template">
+      <article>
+        <header><h2 id="nameHeader">{{name}}</h2></header>
+        <div>{{> recipeDetailsPartial }}</div>
+    </script>
+    
     <form id="recipe-form" onsubmit="createRecipe();return false">
       Name: <input type="text" id="recipeName"><br>
       Description: <input type="text" id="recipeDescription"><br>
       Ingredients: <input type="text" id="recipeIngredients"><br>
       <input type="submit">
     </form>
-    <script id="recipe-template" type="text/x-handlebars-template">
-      {{> recipeDetailsPartial}}
-    </script>
+  
     <script id="recipe-details-partial" type="text/x-handlebars-template">
       <p>{{name}}</p>
     </script>
