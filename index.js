@@ -2,6 +2,7 @@ function init() {
   Handlebars.registerPartial('recipeDetailsPartial', document.getElementById("recipe-details-partial").innerHTML)
   function renderMain() {
   var recipe = {
+    name: 'chicken noodle soup'
     description: 'yummy chicken noodle soup',
     ingredients: [
       {quantity: "1 cup", name: 'chicken'},
