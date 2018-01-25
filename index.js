@@ -57,11 +57,6 @@ function handlebarsSetup() {
   Handlebars.registerPartial('recipeFormPartial', document.getElementById("recipe-form-partial").innerHTML)
 }
 
-
-
-
-
-
 //page and handlebars initializers
 function init() {
   handlebarsSetup()
